@@ -36,7 +36,7 @@ void insertion_sort(T arr[], int idx_start, int idx_end)
     {
         int element = arr[i];           // выбираем эл-т
         int idx_right = i-1;
-        // сравниваем с элем-том справа, пока не вышли за пределы массива
+        // сравниваем с элем-том справа, пока не пришли к началу
         while (arr[idx_right] > element && idx_right >= idx_start)
         {
             arr[idx_right+1]=arr[idx_right];            // меняем выбранный элемент
